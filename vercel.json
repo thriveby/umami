@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "npx --yes pnpm@12.3.4 install --frozen-lockfile",
+  "installCommand": "npm i -g pnpm@12.3.4 && pnpm install --frozen-lockfile",
+  "buildCommand": "DATABASE_URL=$DATABASE_URL_UNPOOLED pnpm run build",
   "regions": ["fra1"]
 }
